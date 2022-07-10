@@ -11,6 +11,8 @@
     "dayjs/": "https://esm.sh/dayjs@1.11.3/",
     "postgress": "https://deno.land/x/postgres@v0.16.1/mod.ts",
     "dotenv/": "https://deno.land/x/dotenv@v3.2.0/",
-    "@db": "./utils/db.ts"
+    "@db": "./utils/db.ts",
+    "marked": "https://esm.sh/marked@4.0.17",
+    "sanitize-html": "https://esm.sh/sanitize-html@2.7.0"
   }
 }

@@ -1,5 +1,5 @@
 import { Client } from 'postgress';
-import * as dotenv from 'dotenv';
+import "dotenv/load.ts";
 
 /**
  * articles テーブルの型

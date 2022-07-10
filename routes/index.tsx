@@ -12,15 +12,9 @@ import { Article, findAllArticles } from '@db';
 dayjs.extend(relativeTime);
 dayjs.locale('ja');
 
-interface Article {
-  id: string;
-  title: string;
-  created_at: string;
-}
-
 export const handler: Handlers<Article[]> = {
   async GET(_, ctx) {
-    const articles = await findAllArticles;
+    const articles = await findAllArticles();
     return ctx.render(articles);
   },
 };

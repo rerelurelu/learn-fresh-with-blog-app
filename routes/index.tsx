@@ -28,7 +28,15 @@ export default function Home({ data }: PageProps<Article[]>) {
       <div class={tw('max-w-screen-sm mx-auto px-4 sm:px-6 md:px-8 pt-12 pb-20 flex flex-col')}>
         <h1 class={tw('text-gray-100 font-extrabold text-5xl')}>Fresh Blog</h1>
         <section class={tw('mt-8')}>
-          <h2 class={tw('text-4xl font-bold text-gray-500 py-4')}>Posts</h2>
+          <div class={tw('flex justify-between items-center')}>
+            <h2 class={tw('text-4xl font-bold text-gray-500 py-4')}>Posts</h2>
+            <a
+              href="/articles/create"
+              class={tw('bg-teal-500 hover:opacity-80 text-white font-bold py-2 px-4 rounded-md')}
+            >
+              Create Post
+            </a>
+          </div>
           <ul>
             {data.map((article) => (
               <li class={tw('bg-gray-400 p-6 rounded-lg shadow-lg mb-4')} key={article.id}>

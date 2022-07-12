@@ -17,6 +17,7 @@ interface Data {
 
 export const handler: Handlers<Data> = {
   async POST(req, ctx) {
+    const headers = req.headers;
     const formData = await req.formData();
     const title = formData.get('title')?.toString();
     const content = formData.get('content')?.toString();
